@@ -30,6 +30,7 @@ void type_storage()
     cin>>lValue;
     static int iStatic_No;    
     register int iRegister_N;    
+    cout<<"Enter the Register ";
     cin>>iRegister_N;
     iStatic_No=iStatic_No+iRegister_N*2;
     for(int iStart=0;iStart<lValue;iStart++)
@@ -50,8 +51,8 @@ int main(int argc,char **argv)
     if(argc == 2 ) //comments for displaying -h file 
    
     {
-        cout<<"The main purpose of this program is to how to use & Declare the Local & Global scope variable"<<endl;
-        cout<<"The main purpose of this program is to how to use & Declare Types of Modifiers and storage classes "<<endl;
+        cout<<"Usage:"<<endl;
+        cout<<" Input : Values "<<endl;
         
     }
     else
