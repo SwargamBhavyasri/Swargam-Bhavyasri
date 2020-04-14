@@ -47,7 +47,6 @@ int main(int argc,char* argv[])
     if(argc==2)        // condition for the arguments to display -h file
     {
      cout<<"Usage :"<<endl;
-     cout<<"Used  to display private variable int* and char[20]"<<endl;
      cout<<"Enter the integer and char variables "<<endl;
         }
     else
