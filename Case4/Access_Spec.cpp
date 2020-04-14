@@ -28,10 +28,8 @@ int main(int argc,char* argv[])
 {
    if(argc==2)	   //condition for the arguments to display -h file
    {
-   	cout<<"\\Usage of the program:\\"<<endl<<"Access Specifiers :::"<<endl<<endl;
-   	cout<<" Private members  ::  Can be accessed with in the class"<<endl<<endl;
-   	cout<<"Protected ::  Inaccessible outside the class but they can be accessed by any derived class of that class" <<endl<<endl;
-   	cout<<"Public members :: Accessible throughout the program"<<endl<<endl;
+   	cout<<"\\Usage of the program:\\"<<endl<<"Access Specifiers :::"<<endl;
+   	cout<<"Input : Integer Values"<<endl;
    	cout<<" "<<endl;
    }
    else
