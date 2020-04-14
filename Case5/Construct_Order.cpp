@@ -42,7 +42,7 @@ int main(int argc,char *argv[])
 	if(argc==2)
 	{
 		cout<<"\\Usage of the program:\\"<<endl;
-		cout<<"To know the order of constructors and Destructors with and without virtual function" <<endl;
+		cout<<"No Input" <<endl;
 	}
 	else
 	{ 
