@@ -16,7 +16,7 @@ bool checkchar(string s)     //To check the length of the string is 1
 }
 int main( int argc,char *argv[])
 {
-	int iX;     //declaration of variables of int data type
+	int iIndex;     //declaration of variables of int data type
 	int iNum;
 	double dPoint; // declaring the variable of double data type
 	if(argc==2)
@@ -26,21 +26,21 @@ int main( int argc,char *argv[])
 		}
 	else
 	{
-	for(iX=1;iX<argc;iX++)               
+	for(iIndex=1;iIndex<argc;iIndex++)               
 		{
-		iNum=atoi(argv[iX]);   //atoi function used to convert a string to integer
-     	dPoint=atof(argv[iX]);  // atof function used to convert a string to float
+		iNum=atoi(argv[iIndex]);   //atoi function used to convert a string to integer
+     	dPoint=atof(argv[iIndex]);  // atof function used to convert a string to float
 		if(iNum==0)
 		{
-          	if(checkchar(argv[iX]))  // if condition for checking the string
+          	if(checkchar(argv[iIndex]))  // if condition for checking the string
 			{
 		  cout<<"Char";
-      	  cout<<"\t"<<argv[iX]<<"\t"<<strlen(argv[iX])<<endl;
+      	  cout<<"\t"<<argv[iIndex]<<"\t"<<strlen(argv[iIndex])<<endl;
 			}
 		else
 	     	{
 	     	cout<<"String";
-		    cout<<"\t"<<argv[iX]<<"\t"<<sizeof(argv[iX])<<endl;    
+		    cout<<"\t"<<argv[iIndex]<<"\t"<<sizeof(argv[iIndex])<<endl;    
 			}
 		}
 		else
