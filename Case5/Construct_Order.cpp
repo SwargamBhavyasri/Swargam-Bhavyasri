@@ -7,7 +7,7 @@ class car   //base class
 	public : car()
 	{
 		cout<<"This is a car Constructor(Base)"<<endl;
-		func1();
+	
 	}
 	~car()
 	{
@@ -16,10 +16,6 @@ class car   //base class
 	virtual void func1()
 	{
 		cout<<"Virtual Function"<<endl;
-	}
-	void func2()
-	{
-		func1();
 	}
 };
 class maruthi : public car  //derived class
