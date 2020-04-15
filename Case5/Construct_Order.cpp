@@ -2,14 +2,14 @@
   Author   : Swargam Bhavyasri  */
 #include<iostream>
 using namespace std;
-class car
+class car   //base class
 {
-	public : car()                                    
+	public : car()
 	{
 		cout<<"This is a car Constructor(Base)"<<endl;
 		func1();
 	}
-	~car()                            
+	~car()
 	{
 		cout<<"Destructing a car"<<endl;
 	}
@@ -22,13 +22,13 @@ class car
 		func1();
 	}
 };
-class maruthi : public car
+class maruthi : public car  //derived class
 {
 	public : maruthi()
 	{
 		cout<<"This is maruthi Constructor (Derived)"<<endl;
 	}
-    virtual	void func()
+   	 void func1()
 	{
 		cout<<"maruthi(derived class)Virtual Function"<<endl;
 	}
@@ -39,21 +39,15 @@ class maruthi : public car
 };
 int main(int argc,char *argv[])
 {
-	if(argc==2)
+	if(argc==2)   //condition for the arguments to display -h file
 	{
-		cout<<"\\Usage of the program:\\"<<endl;
-		cout<<"No Input" <<endl;
+		cout<<"\\Usage of the program:\\"<<endl<<endl<<endl;
+		cout<<"Order of constructors and Destructors"<<endl;
 	}
 	else
 	{ 
-	car *p,c;
-	maruthi m;         //object creation
-	p=&c;              
-	p->func1();        // point to base class
-	p=&m;
-	p->func1();        // point to derived class
+	maruthi m;     //creation of object for derived class
+	m.func1();     
 	return 0;
 	}
-	
-
 }
